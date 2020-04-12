@@ -1,7 +1,7 @@
 ## Overview
 
 This is simple Go REST API to reproduce error when accessing [mysql time data type](https://dev.mysql.com/doc/refman/8.0/en/time.html) using [mysql driver](https://github.com/go-sql-driver/mysql).
-Read the my explanation here :
+Read my explanation here :
 
 - en version : 
 - id version :
