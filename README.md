@@ -18,6 +18,7 @@ Read my explanation here :
 
 ### Without docker
 
+- Clone this repo
 - Make sure latest version of Golang is installed and setup properly
 - Mysql installed
 - Create your database and you can import `prepare_shift.sql`
