@@ -1,0 +1,9 @@
+port: 9696
+timeout: 5 # in second
+timezone: "Asia/Jakarta"
+database:
+  dbname: "gavin_company"
+  user: "user"
+  password: "password"
+  host: "time_error_mysql"
+  port: 3306

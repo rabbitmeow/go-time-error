@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  app1:
+    build: ./before/.
+    container_name: time_error_app_before
+    ports:
+      - 9595:9595
+    depends_on:
+      - mysql
+    restart: always
+
+  app2:
+    build: ./after/.
+    container_name: time_error_app_after
+    ports:
+      - 9696:9696
+    depends_on:
+      - mysql
+    restart: always
+  
+  mysql:
+    image: mysql:5.7
+    container_name: time_error_mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gavin_company
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./dbdata:/var/lib/mysql
+      - ./prepare_shift.sql:/docker-entrypoint-initdb.d/init.sql
+    
