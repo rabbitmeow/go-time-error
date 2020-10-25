@@ -4,7 +4,7 @@ This is simple Go REST API to reproduce error when accessing [mysql time data ty
 Read my explanation here :
 
 - en version : <https://blog.gavinda.dev/posts/mysql-time-not-supported-in-go-mysql-driver/>
-- id version : <https://medium.com/@gavindakinandana/error-mysql-tipe-data-time-di-golang-254ee291f601>
+- id version : <https://medium.com/@vinbyte/error-mysql-tipe-data-time-di-golang-254ee291f601>
 
 ## How to run
 
